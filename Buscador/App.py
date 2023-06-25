@@ -1,4 +1,3 @@
-from Buscador import *
 from Cargo import *
 from Departamento import *
 from Oferta import *
