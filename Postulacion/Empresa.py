@@ -1,4 +1,5 @@
 from Usuario import *
+from Oferta import *
 class Empresa(Usuario):
     def __init__(self, telefono, correo, direccion,nit):
         super().__init__(telefono, correo, direccion)
@@ -14,5 +15,6 @@ class Empresa(Usuario):
     def getofertas(self):
         return self.__ofertas
 
-    def agregaroferta(self, oferta):
-        self.__ofertas.append(oferta)
+    def agregaroferta(self, id,numpostulados,fechapublicacion,fechacierre):
+        ofer=Oferta(id,numpostulados,fechapublicacion,fechacierre)
+        self.__ofertas.append(ofer)
