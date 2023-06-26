@@ -2,7 +2,7 @@ from Cargo import *
 from Departamento import *
 from Oferta import *
 from Ubicacion import *
-from usuario import *
+from Usuario import *
 
 while True:
     print("Menu")

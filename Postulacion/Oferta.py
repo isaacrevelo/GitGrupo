@@ -1,8 +1,9 @@
 from Vacante import *
 
 class Oferta:
-    def __init__(self,id,numpostulados,fechapublicacion,fechacierre):
+    def __init__(self,id,ocupacion,numpostulados,fechapublicacion,fechacierre):
         self.__id=id
+        self.__ocupacion=ocupacion
         self.__vacantes=[]
         self.__numpostulados=numpostulados
         self.__fechapublicacion=fechapublicacion
@@ -13,6 +14,12 @@ class Oferta:
     
     def setid(self,id):
         self.__id=id
+
+    def get_ocupacion(self):
+        return self.__ocupacion
+    
+    def set_ocupacion(self,ocupacion):
+        self.__ocupacion=ocupacion
     
     def getnumpostulados(self):
         return self.__numpostulados
@@ -36,9 +43,8 @@ class Oferta:
         self.__vacantes.append(vacante)
     
     def getvacantes(self):
-        print ("vacantes: ",self)
         for v in self.__vacantes:
-            print(f"Ocupacion: {v.ocupacion}, Numero de vacantes: {v.numvacantes}, Salario: {v.salario}, Experiencia: {v.experiencia}")
+            print(f"Ocupacion: {v.get_ocupacion}, Numero de vacantes: {v.get_num_vacantes}, Salario: {v.get_salario}, Experiencia: {v.get_experiencia}")
 
     def __str__(self):
         return self.id
