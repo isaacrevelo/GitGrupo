@@ -1,31 +1,38 @@
+from Ubicacion import *
+from Cargo import *
+from Departamento import *
 class Oferta:
     def __init__(self,id,numpostulados,fechapublicacion,fechacierre):
-        self.__id=id
-        #self.__vacante=[]
-        self.__numpostulados=numpostulados
-        self.__fechapublicacion=fechapublicacion
-        self.__fechacierre=fechacierre
+        self.id=id
+        self.numpostulados=numpostulados
+        self.fechapublicacion=fechapublicacion
+        self.fechacierre=fechacierre
     
     def getid(self):
-        return self.__id
+        return self.id
     
     def setid(self,id):
-        self.__id=id
+        self.id=id
     
     def getnumpostulados(self):
-        return self.__numpostulados
+        return self.numpostulados
     
     def setnumpostulados(self,numpostulados):
-        self.__numpostulados=numpostulados
+        self.numpostulados=numpostulados
     
     def getfechapublicacion(self):
-        return self.__fechapublicacion
+        return self.fechapublicacion
     
     def setfechapublicacion(self,fechapublicacion):
-        self.__fechapublicacion=fechapublicacion
+        self.fechapublicacion=fechapublicacion
     
     def getfechacierre(self):
-        return self.__fechacierre
+        return self.fechacierre
     
     def setfechacierre(self,fechacierre):
-        self.__fechacierre=fechacierre
+        self.fechacierre=fechacierre
+
+oferta = Oferta(1, 45324567, "2023-06-26", "2023-07-10")
+cargo = Cargo("Requisitos para el cargo", "6 meses", "Contrato temporal", 9)
+departamento = Departamento("Departamentos de informática y programacion", "Tipo 1")
+ubicacion = Localizacion("25", "754", "Cundinamarca", "Soacha")
