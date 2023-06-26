@@ -1,11 +1,9 @@
 class ExperienciaLaboral:
-    def __init__(self, titulopuesto, empresa, descripcion, fechainicio, fechafin, motivoretiro):
-        self.__titulo_puesto = titulopuesto
+    def __init__(self, titulopuesto, empresa, descripcion,duracion):
+        self.__titulopuesto=titulopuesto
         self.__empresa = empresa
         self.__descripcion = descripcion
-        self.__fechainicio = fechainicio
-        self.__fechafin = fechafin
-        self.__motivoretiro = motivoretiro
+        self.__duracion=duracion
 
     def get_titulo_puesto(self):
         return self.__titulopuesto
@@ -25,11 +23,11 @@ class ExperienciaLaboral:
     def set_descripcion(self, descripcion):
         self.__descripcion = descripcion
 
-    def get_fecha_inicio(self):
-        return self.__fechainicio
+    def getduracion(self):
+        return self.__duracion
 
-    def set_fecha_inicio(self, fechainicio):
-        self.__fechainicio = fechainicio
+    def setduracion(self, duracion):
+        self.__duracion= duracion
 
     def get_fecha_fin(self):
         return self.__fechafin

@@ -1,8 +1,8 @@
 class Idioma:
-    def __init__(self, nombreidioma, nivelidioma, certificacionidioma):
+    def __init__(self, nombreidioma, nivelidioma):
         self.__nombreidioma = nombreidioma
         self.__nivelidioma = nivelidioma
-        self.__certificacionidioma = certificacionidioma
+        #self.__certificacionidioma = certificacionidioma
 
     def getNombreIdioma(self):
         return self.__nombreidioma
@@ -16,8 +16,8 @@ class Idioma:
     def setNivelIdioma(self, nivelidioma):
         self.__nivelidioma = nivelidioma
 
-    def getCertificacionIdioma(self):
-        return self.__certificacionidioma
+    # def getCertificacionIdioma(self):
+    #     return self.__certificacionidioma
 
-    def setCertificacionIdioma(self, certificacionidioma):
-        self.__certificacionidioma = certificacionidioma
+    # def setCertificacionIdioma(self, certificacionidioma):
+    #     self.__certificacionidioma = certificacionidioma

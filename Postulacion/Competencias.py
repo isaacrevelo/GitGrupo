@@ -1,9 +1,9 @@
 class Competencias:
-    def __init__(self, nombrecompetencia, descripcion, niveldominio, logrosdestacados):
+    def __init__(self, nombrecompetencia, descripcion, niveldominio):
         self.__nombrecompetencia = nombrecompetencia
         self.__descripcion = descripcion
         self.__niveldominio = niveldominio
-        self.__logrosdestacados = logrosdestacados
+        #self.__logrosdestacados = logrosdestacados
 
     def getnombrecompetencia(self):
         return self.__nombrecompetencia
@@ -26,5 +26,5 @@ class Competencias:
     def setniveldominio(self, niveldominio):
         self.__niveldominio = niveldominio
 
-    def setlogrosdestacados(self, logrosdestacados):
-        self.__logrosdestacados = logrosdestacados
+    # def setlogrosdestacados(self, logrosdestacados):
+    #     self.__logrosdestacados = logrosdestacados
